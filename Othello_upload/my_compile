@@ -1,0 +1,7 @@
+gcc -c -o moves2.o moves2.c 
+gcc -c -o user_input.o user_input.c
+g++ -c -o algo.o apha_beta.cpp -std=c++11
+g++ -c -o board.o board_plus.cpp -std=c++11
+g++ -c -o engine.o engine2.cpp -std=c++11
+g++ -c -o flip_engine.o flip_engine.cpp -std=c++11
+g++ -o mcollin5Othello.out algo.o moves2.o engine.o user_input.o board.o flip_engine.o -std=c++11 
